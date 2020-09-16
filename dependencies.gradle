@@ -1,0 +1,45 @@
+ext {
+    versions = [
+            'appCompat'           : "1.2.0",
+            'ktx'                 : "1.3.1",
+            'material'            : "1.2.0",
+            'constraintLayout'    : "1.1.3",
+            'swiperefreshlayout'  : "1.1.0",
+            'gson'                : "2.8.6",
+            'retrofit'            : "2.7.1",
+            'timber'              : "4.7.1",
+            'loggingInterceptor'  : "3.14.2",
+            'glide'               : "4.9.0",
+            'gradle'              : "3.5.4",
+            'kotlin'              : "1.3.72"
+    ]
+
+    classpaths = [
+            'gradle'            : "com.android.tools.build:gradle:$versions.gradle",
+            'kotlinGradlePlugin': "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+            'kotlinStdLib'      : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
+    ]
+
+    supportLibraries = [
+            'appCompat': "androidx.appcompat:appcompat:$versions.appCompat",
+            'ktx'      : "androidx.core:core-ktx:$versions.ktx"
+    ]
+
+    libraries = [
+            //Material
+            'material'              : "com.google.android.material:material:$versions.material",
+            'constraintLayout'      : "androidx.constraintlayout:constraintlayout:$versions.constraintLayout",
+            'swiperefreshlayout'    : "androidx.swiperefreshlayout:swiperefreshlayout:$versions.swiperefreshlayout",
+
+            //Gson
+            'gson'                  : "com.google.code.gson:gson:$versions.gson",
+
+            //Retrofit
+            'retrofit'              : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+            'retrofitConverterGson' : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+
+            //Logging
+            'timber'                : "com.jakewharton.timber:timber:$versions.timber",
+            'loggingInterceptor'    : "com.squareup.okhttp3:logging-interceptor:$versions.loggingInterceptor",
+    ]
+}
